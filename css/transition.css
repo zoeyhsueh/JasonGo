@@ -1,0 +1,49 @@
+/* ---圖片往上移動
+
+.jason {
+    position: absolute;
+    left: 300px;
+  width: 200px;
+  bottom: 0;
+  background: red;
+  transition: all 6s cubic-bezier(1, 0.08, 0, 1.19);
+}
+
+.box:hover {
+  background-color: green;
+  cursor: pointer;
+} */
+
+body{
+    margin:0;
+    padding:0;
+    background: #000 url(../img/ocean.png) left center fixed no-repeat;
+    background-size: cover;
+    animation: full 10s linear infinite alternate;
+    animation-play-state: running;
+}
+img {  
+    display: inline-block;  
+    }  
+         
+.jason {  
+    width: 200px;  
+    display:block; 
+    margin: 100px auto;  
+       }  
+         
+.jason {  
+    animation: myfirst 6s infinite;  
+}  
+         
+@keyframes myfirst {  
+    0% {  
+        transform: translate(0px, 0px);  
+    }  
+    50% {  
+        transform: translate(0px, -50px);  
+    }  
+    100% {  
+        transform: translate(0px, 0px);  
+    }  
+ }  
